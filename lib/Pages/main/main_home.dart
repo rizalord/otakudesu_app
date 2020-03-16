@@ -1,3 +1,5 @@
+import 'package:async/async.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:otakudesu_app/Pages/components/Cards/recommend_card.dart';
 import 'package:otakudesu_app/Pages/components/home_header.dart';
@@ -12,7 +14,26 @@ class MainHome extends StatefulWidget {
   }
 }
 
-class _MainHomeState extends State<MainHome> {
+class _MainHomeState extends State<MainHome>{
+
+  final AsyncMemoizer _memo = AsyncMemoizer();
+  DatabaseReference _firebaseDatabase = FirebaseDatabase.instance.reference();
+  Future _trendsFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _trendsFuture = _getTrendsData();
+  }
+
+  Future _getTrendsData() async {
+    return this._memo.runOnce(() async => await _firebaseDatabase
+        .child('videos')
+        .orderByChild('views')
+        .limitToLast(6)
+        .once());
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -26,7 +47,17 @@ class _MainHomeState extends State<MainHome> {
                 headerTitle: 'Trending',
                 rightText: 'More',
               ),
-              ListOfTrending(),
+              FutureBuilder(
+                future: _trendsFuture,
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return ListOfTrending(
+                        data: snapshot.data.value.reversed.where((i) => i != null).toList());
+                  } else {
+                    return Container();
+                  }
+                },
+              ),
               SubHeaderText(
                 headerTitle: 'Latest Update',
                 leftTextSize: 15,

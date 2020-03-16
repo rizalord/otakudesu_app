@@ -1,65 +1,134 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:otakudesu_app/Pages/secondary/watch_movie.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:touchable_opacity/touchable_opacity.dart';
 
-class ListEpisode extends StatelessWidget {
-  final List<Episode> dummyData = [
-    Episode(
-        thumbnail:
-            'https://news.otakukart.com/wp-content/uploads/2020/01/Haikyuu-Season-4-episode-1.jpg',
-        time: 23,
-        title: '1. Pengenalan'),
-    Episode(
-        thumbnail:
-            'https://deku.zonawibu.cc/wp-content/uploads/2020/01/00000250.jpg',
-        time: 23,
-        title: '2. Kehilangan'),
-    Episode(
-        thumbnail:
-            'https://haikyuutothetop3.files.wordpress.com/2020/01/1369348.jpg',
-        time: 23,
-        title: '3. Sudut Pandang'),
-    Episode(
-        thumbnail:
-            'https://deku.zonawibu.cc/wp-content/uploads/2020/02/00000260.jpg',
-        time: 23,
-        title: '4. Santai Saja'),
-    Episode(
-        thumbnail:
-            'https://www.oujanime.com/wp-content/uploads/2020/02/Haikyuu-S4-05.jpg',
-        time: 23,
-        title: '5. Lapar'),
-  ];
+class ListEpisode extends StatefulWidget {
+  final List<dynamic> episodes;
+  final bool onProfile;
+  ListEpisode({this.episodes, this.onProfile = false});
+
+  @override
+  _ListEpisodeState createState() => _ListEpisodeState();
+}
+
+class _ListEpisodeState extends State<ListEpisode> {
+  List episodeProfile = [];
+
+  addToHistory(Map<dynamic, dynamic> episode) async {
+    episode['taked_at'] = DateTime.now().millisecondsSinceEpoch;
+    SharedPreferences local = await SharedPreferences.getInstance();
+    String userId = local.getString('userId');
+
+    String key = FirebaseDatabase.instance
+        .reference()
+        .child('users')
+        .child(userId)
+        .child('episodes')
+        .push()
+        .key;
+
+    await FirebaseDatabase.instance
+        .reference()
+        .child('users')
+        .child(userId)
+        .child('episodes')
+        .child(key)
+        .set(episode);
+  }
+
+  @override
+  void initState() {
+    getVideoHistory();
+    super.initState();
+  }
+
+  getVideoHistory() async {
+    SharedPreferences db = await SharedPreferences.getInstance();
+    String userId = db.getString('userId');
+    FirebaseDatabase.instance
+        .reference()
+        .child('users')
+        .child(userId)
+        .child('episodes')
+        .orderByChild('taked_at')
+        .limitToLast(10)
+        .once()
+        .then((DataSnapshot snapshot) {
+          List list = snapshot.value.entries.map((e) => e.value).toList();
+          list.sort((a, b) => b['taked_at'].compareTo(a['taked_at']));
+
+          setState(() {
+            episodeProfile = list != null ? list : [];
+          });
+
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      color: Theme.of(context).scaffoldBackgroundColor,
-      child: ListView.builder(
-        scrollDirection: Axis.vertical,
-        itemCount: dummyData.length,
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        padding: EdgeInsets.only(top: 0, left: 0, right: 0, bottom: 6),
-        itemBuilder: (context, index) => TouchableOpacity(
-          activeOpacity: 0.7,
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => VideoPlayerScreen(),
-            ),
-          ),
-          child: EpisodeCard(
-            title: dummyData[index].title,
-            time: dummyData[index].time,
-            thumbnail: dummyData[index].thumbnail,
-          ),
-        ),
-      ),
-    );
+    return widget.episodes == null && widget.onProfile == false
+        ? Container()
+        : Container(
+            width: MediaQuery.of(context).size.width,
+            color: Theme.of(context).scaffoldBackgroundColor,
+            child: !widget.onProfile
+                ? ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    itemCount: widget.episodes.length,
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
+                    padding:
+                        EdgeInsets.only(top: 0, left: 0, right: 0, bottom: 6),
+                    itemBuilder: (context, index) => TouchableOpacity(
+                      activeOpacity: 0.7,
+                      onTap: () {
+                        addToHistory(widget.episodes[index]);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                VideoPlayerScreen(url: widget.episodes[index]['url']),
+                          ),
+                        );
+                      },
+                      child: EpisodeCard(
+                        title: widget.episodes[index]['title'],
+                        time: widget.episodes[index]['time_duration'],
+                        thumbnail: widget.episodes[index]['thumbnail'],
+                        episode: widget.episodes[index]['episode'],
+                      ),
+                    ),
+                  )
+                : ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    itemCount: episodeProfile.length,
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
+                    padding:
+                        EdgeInsets.only(top: 0, left: 0, right: 0, bottom: 6),
+                    itemBuilder: (context, index) => TouchableOpacity(
+                      activeOpacity: 0.7,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                VideoPlayerScreen(url: episodeProfile[index]['url']),
+                          ),
+                        );
+                      },
+                      child: EpisodeCard(
+                        title: episodeProfile[index]['title'],
+                        time: episodeProfile[index]['time_duration'],
+                        thumbnail: episodeProfile[index]['thumbnail'],
+                        episode: episodeProfile[index]['episode'],
+                      ),
+                    ),
+                  ));
   }
 }
 
@@ -69,10 +138,11 @@ class EpisodeCard extends StatelessWidget {
     @required this.thumbnail,
     @required this.title,
     @required this.time,
+    @required this.episode,
   }) : super(key: key);
 
-  final String thumbnail, title;
-  final int time;
+  final String thumbnail, title, time;
+  final int episode;
 
   @override
   Widget build(BuildContext context) {
@@ -129,14 +199,14 @@ class EpisodeCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      title,
+                      "${episode}. ${title}",
                       style: GoogleFonts.roboto(
                         color: Colors.white,
                         fontSize: 15.5,
                       ),
                     ),
                     Text(
-                      time.toString() + 'm',
+                      time.toString(),
                       style: GoogleFonts.roboto(
                           color: Colors.white.withOpacity(0.6),
                           fontSize: 14,

@@ -5,6 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoPlayerScreen extends StatefulWidget {
+  final String url ;
+  VideoPlayerScreen({this.url});
+
   @override
   State<StatefulWidget> createState() {
     return _VideoPlayerScreenState();
@@ -17,6 +20,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   ChewieController chewieController;
   var playerWidget;
 
+  
+
   @override
   void initState() {
     BackButtonInterceptor.add(myInterceptor);
@@ -24,6 +29,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
     ]);
+    this.videoPlayerController = VideoPlayerController.network(widget.url);
     this.chewieController = ChewieController(
         videoPlayerController: videoPlayerController,
         // aspectRatio: 3 / 2,

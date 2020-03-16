@@ -1,0 +1,336 @@
+{
+  "recommend_video" : {
+    "id" : 1,
+    "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/hoshiumi.png?alt=media&token=83758e28-189f-4003-a825-a44f5f3ae9bb"
+  },
+  "videos" : [ {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://news.otakukart.com/wp-content/uploads/2020/01/Haikyuu-Season-4-episode-1.jpg",
+      "time_duration" : "23m",
+      "title" : "Pengenalan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://deku.zonawibu.cc/wp-content/uploads/2020/01/00000250.jpg",
+      "time_duration" : "23m",
+      "title" : "Kehilangan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1813/105367l.jpg",
+    "rank" : 38,
+    "score" : 8.72,
+    "season" : 4,
+    "sinopsis" : "Setelah menjuarai Kualifikasi Turnamen Musim Semi Nasional Voli Prefektur Miyagi, perjalanan Hinata Shoyo dengan Tim Karasuno akan terus berlanjut di kancah Nasional Turnamen Voli Musim Semi. Haikyuu season 4 dimulai dengan Kageyama Tobio mendapatkan sebuah undangan untuk mengikuti kamp pelatihan Calon Atlet Nasional Muda Jepang.",
+    "title" : "Haikyu: To The Top",
+    "updated_at" : 1584086912,
+    "views" : 200
+  }, {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  },
+  {
+    "comments" : [ {
+      "created_at" : 7286472482,
+      "image" : "https://pokokeimage",
+      "likes" : 1,
+      "name" : "Ahmad Khamdani",
+      "text" : "Mantap Gayn",
+      "uid" : "42342jfes72"
+    } ],
+    "created_at" : 1584086912,
+    "episodes" : [ {
+      "episode" : 1,
+      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+      "time_duration" : "23m",
+      "title" : "Awal Perjalanan",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    }, {
+      "episode" : 2,
+      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+      "time_duration" : "23m",
+      "title" : "Absolute Demonic Front Babylonia",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+    } ],
+    "genres" : [ "Sport", "Comedy" ],
+    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
+    "rank" : 689,
+    "score" : 8.33,
+    "season" : 3,
+    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
+    "title" : "FGO: Babylonia",
+    "updated_at" : 1584086912,
+    "views" : 400
+  }
+ ]
+}

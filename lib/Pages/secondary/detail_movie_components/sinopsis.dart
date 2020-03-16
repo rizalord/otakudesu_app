@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailMovieSinopsis extends StatelessWidget {
+
+  final String sinopsis;
+  DetailMovieSinopsis({this.sinopsis});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,7 +40,7 @@ class DetailMovieSinopsis extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             child: SingleChildScrollView(
               child: Text(
-                'Setelah menjuarai Kualifikasi Turnamen Musim Semi Nasional Voli Prefektur Miyagi, perjalanan Hinata Shoyo dengan Tim Karasuno akan terus berlanjut di kancah Nasional Turnamen Voli Musim Semi. Haikyuu season 4 dimulai dengan Kageyama Tobio mendapatkan sebuah undangan untuk mengikuti kamp pelatihan Calon Atlet Nasional Muda Jepang.',
+                sinopsis,
                 style: GoogleFonts.poppins(
                   color: Colors.white,
                   fontSize: 14,

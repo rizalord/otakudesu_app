@@ -1,8 +1,25 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:touchable_opacity/touchable_opacity.dart';
 
 class DetailMovieHeader extends StatelessWidget {
+  final String image, title;
+  final int rank, season;
+  final double score;
+  final List<dynamic> genre;
+  String lastGenre;
+
+  DetailMovieHeader(
+      {this.image,
+      this.title,
+      this.rank,
+      this.season,
+      this.score,
+      this.genre}) {
+    lastGenre = this.genre.join(' / ');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -11,8 +28,7 @@ class DetailMovieHeader extends StatelessWidget {
           width: double.infinity,
           height: MediaQuery.of(context).size.width * 1.28,
           child: CachedNetworkImage(
-            imageUrl:
-                'https://cdn.myanimelist.net/images/anime/1813/105367l.jpg',
+            imageUrl: image,
             fit: BoxFit.cover,
           ),
         ),
@@ -35,13 +51,20 @@ class DetailMovieHeader extends StatelessWidget {
         Positioned(
           top: 15,
           left: 0,
-          child: IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.chevron_left,
-              color: Color.fromRGBO(240, 240, 240, 1),
+          child: Container(
+            width: 50,
+            height: 50,
+            child: TouchableOpacity(
+              activeOpacity: 0.3,
+              onTap: () {
+                Navigator.of(context , rootNavigator: true).pop();
+              },
+              child: Icon(
+                Icons.chevron_left,
+                color: Color.fromRGBO(240, 240, 240, 1),
+                size: 35,
+              ),
             ),
-            iconSize: 35,
           ),
         ),
         Positioned(
@@ -79,7 +102,7 @@ class DetailMovieHeader extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(left: 5, right: 5),
                         child: Text(
-                          'Score: 8.33',
+                          'Score: ${this.score}',
                           style: GoogleFonts.montserrat(
                             color: Colors.white,
                             fontSize: 14,
@@ -87,7 +110,7 @@ class DetailMovieHeader extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        '#201',
+                        '#${this.rank}',
                         style: GoogleFonts.montserrat(
                           color: Color(0xFF5AA1A6),
                           fontSize: 10,
@@ -101,7 +124,7 @@ class DetailMovieHeader extends StatelessWidget {
                     margin: EdgeInsets.only(bottom: 10),
                     padding: EdgeInsets.only(left: 20, right: 20),
                     child: Text(
-                      'Haikyuu',
+                      title,
                       style: GoogleFonts.poppins(
                           color: Colors.white, fontSize: 28),
                       textAlign: TextAlign.center,
@@ -113,7 +136,7 @@ class DetailMovieHeader extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(bottom: 10),
                   child: Text(
-                    'Season Keempat - Sport/Comedy',
+                    'Season ${this.season} - ${this.lastGenre}',
                     style:
                         GoogleFonts.poppins(color: Colors.white, fontSize: 13),
                   ),

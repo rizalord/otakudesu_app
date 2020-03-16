@@ -19,7 +19,7 @@ class _HomeHeaderState extends State<HomeHeader> {
             padding: EdgeInsets.only(left: 15, top: 15),
             child: CachedNetworkImage(
               imageUrl:
-                  'https://otakudesu.org/wp-content/uploads/2019/08/otakudesu.png',
+                'https://otakudesu.org/wp-content/uploads/2019/08/otakudesu.png',
               width: 150,
               height: 60,
             ),

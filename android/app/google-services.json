@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "329373603416-13cticokjcef3d9e1i8jo2e08kg29j9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.otakudesu_app",
+            "certificate_hash": "ae7596ecf3ad153e62d3bcd988e6d08cc82ff498"
+          }
+        },
+        {
           "client_id": "329373603416-iu6js6gltc4l83nvksn9h28qqfh9sp41.apps.googleusercontent.com",
           "client_type": 3
         }
