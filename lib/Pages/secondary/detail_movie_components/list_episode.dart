@@ -9,7 +9,8 @@ import 'package:touchable_opacity/touchable_opacity.dart';
 class ListEpisode extends StatefulWidget {
   final List<dynamic> episodes;
   final bool onProfile;
-  ListEpisode({this.episodes, this.onProfile = false});
+  final int idMovie;
+  ListEpisode({this.episodes, this.onProfile = false, this.idMovie = null});
 
   @override
   _ListEpisodeState createState() => _ListEpisodeState();
@@ -38,6 +39,28 @@ class _ListEpisodeState extends State<ListEpisode> {
         .child('episodes')
         .child(key)
         .set(episode);
+
+    viewCounter();
+  }
+
+  viewCounter() {
+    if (widget.idMovie != null) {
+      FirebaseDatabase.instance
+          .reference()
+          .child('videos')
+          .child(widget.idMovie.toString())
+          .child('views')
+          .once()
+          .then((DataSnapshot snapshot) {
+        int views = snapshot.value + 1;
+        FirebaseDatabase.instance
+            .reference()
+            .child('videos')
+            .child(widget.idMovie.toString())
+            .child('views')
+            .set(views);
+      });
+    }
   }
 
   @override
@@ -58,14 +81,13 @@ class _ListEpisodeState extends State<ListEpisode> {
         .limitToLast(10)
         .once()
         .then((DataSnapshot snapshot) {
-          List list = snapshot.value.entries.map((e) => e.value).toList();
-          list.sort((a, b) => b['taked_at'].compareTo(a['taked_at']));
+      List list = snapshot.value.entries.map((e) => e.value).toList();
+      list.sort((a, b) => b['taked_at'].compareTo(a['taked_at']));
 
-          setState(() {
-            episodeProfile = list != null ? list : [];
-          });
-
-        });
+      setState(() {
+        episodeProfile = list != null ? list : [];
+      });
+    });
   }
 
   @override
@@ -90,8 +112,8 @@ class _ListEpisodeState extends State<ListEpisode> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>
-                                VideoPlayerScreen(url: widget.episodes[index]['url']),
+                            builder: (context) => VideoPlayerScreen(
+                                url: widget.episodes[index]['url']),
                           ),
                         );
                       },
@@ -116,8 +138,8 @@ class _ListEpisodeState extends State<ListEpisode> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>
-                                VideoPlayerScreen(url: episodeProfile[index]['url']),
+                            builder: (context) => VideoPlayerScreen(
+                                url: episodeProfile[index]['url']),
                           ),
                         );
                       },

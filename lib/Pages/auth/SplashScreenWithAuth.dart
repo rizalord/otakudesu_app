@@ -86,6 +86,8 @@ class _SplashScreenState extends State<SplashScreen> {
       await db.setString('photo', photo);
       await db.setString('name', name);
       await db.setBool('isLogin', true);
+      await db.setStringList('favoritesId', []);
+      await db.setStringList('commentsId', []);
 
       Navigator.pushReplacement(
         context,

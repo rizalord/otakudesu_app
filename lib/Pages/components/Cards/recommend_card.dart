@@ -1,7 +1,14 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:otakudesu_app/Pages/secondary/detail_movie.dart';
+import 'package:touchable_opacity/touchable_opacity.dart';
 
 class RecommendCard extends StatelessWidget {
+  final String image;
+  final int id;
+
+  RecommendCard({this.image, this.id});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,24 +16,31 @@ class RecommendCard extends StatelessWidget {
       height: MediaQuery.of(context).size.width * 0.60,
       margin: EdgeInsets.only(top: 10, bottom: 0),
       // color: Colors.white,
-      child: Stack(
-        fit: StackFit.passthrough,
-        children: <Widget>[
-          Container(
-            alignment: Alignment.center,
-            foregroundDecoration: BoxDecoration(
-              image: DecorationImage(
-                  image: CachedNetworkImageProvider(
-                      'https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/hoshiumi.png?alt=media&token=83758e28-189f-4003-a825-a44f5f3ae9bb'),
-                  fit: BoxFit.fill),
-            ),
+      child: TouchableOpacity(
+        activeOpacity: 0.8,
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetailMovie(data: id),
           ),
-          Positioned(
-              child: Container(
-                  color: Colors.transparent,
-                  child: Icon(Icons.play_circle_outline,
-                      color: Colors.white, size: 65)))
-        ],
+        ),
+        child: Stack(
+          fit: StackFit.passthrough,
+          children: <Widget>[
+            Container(
+              alignment: Alignment.center,
+              foregroundDecoration: BoxDecoration(
+                image: DecorationImage(
+                    image: CachedNetworkImageProvider(image), fit: BoxFit.fill),
+              ),
+            ),
+            Positioned(
+                child: Container(
+                    color: Colors.transparent,
+                    child: Icon(Icons.play_circle_outline,
+                        color: Colors.white, size: 65)))
+          ],
+        ),
       ),
     );
   }

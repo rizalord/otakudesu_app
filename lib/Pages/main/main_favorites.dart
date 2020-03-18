@@ -1,16 +1,51 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:otakudesu_app/Pages/components/Cards/TrendingCard.dart';
+import 'package:otakudesu_app/Pages/secondary/detail_movie.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:touchable_opacity/touchable_opacity.dart';
 
 class MainFavorites extends StatefulWidget {
-
-
   @override
   _MainFavoritesState createState() => _MainFavoritesState();
 }
 
 class _MainFavoritesState extends State<MainFavorites> {
+  bool show = false;
+  List<dynamic> dataFavorites = [];
 
+  @override
+  void initState() {
+    getFavorites();
+    super.initState();
+  }
+
+  void getFavorites() async {
+    SharedPreferences localDb = await SharedPreferences.getInstance();
+    List<String> data = localDb.getStringList('favoritesId');
+    int inc = 0;
+    data.reversed.forEach((element) async {
+      await FirebaseDatabase.instance
+          .reference()
+          .child('videos')
+          .orderByChild('id')
+          .equalTo(int.parse(element))
+          .limitToLast(1)
+          .once()
+          .then((DataSnapshot snapshot) {
+        dataFavorites.insert(
+            0, snapshot.value.where((e) => e != null).toList()[0]);
+        inc += 1;
+      }).whenComplete(() {
+        if (inc == data.length) {
+          setState(() {
+            show = true;
+          });
+        }
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,78 +84,106 @@ class _MainFavoritesState extends State<MainFavorites> {
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
                 crossAxisCount: 3,
-                children: List.generate(
-                  10,
-                  (index) => Container(
-                    margin: EdgeInsets.only(top : 20),
-                    padding: EdgeInsets.only(
-                      bottom: 0,
-                      right: 10,
-                      left: 10,
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      // crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        TrendCard(
-                          url:
-                              'https://cdn.myanimelist.net/images/anime/1694/104929.jpg',
-                          ratio: 5,
-                          radius: 3,
-                        ),
-                        Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Container(
-                                child: Text(
-                                  'Haikyuu',
-                                  style: GoogleFonts.montserrat(
-                                    color: Colors.white,
-                                    fontSize: 13,
-                                  ),
-                                  textAlign: TextAlign.left,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
+                children: show == true
+                    ? dataFavorites
+                        .map(
+                          (index) => TouchableOpacity(
+                            key: PageStorageKey(index),
+                            activeOpacity: 0.7,
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    DetailMovie(data: index['id']),
                               ),
-                              SizedBox(
-                                height: 7,
+                            ),
+                            child: Container(
+                              margin: EdgeInsets.only(top: 20),
+                              padding: EdgeInsets.only(
+                                bottom: 0,
+                                right: 10,
+                                left: 10,
                               ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                // crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Image.network(
-                                    'https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png',
-                                    height: 12,
-                                    width: 12,
+                                  TrendCard(
+                                    url: index['image'],
+                                    ratio: 5,
+                                    radius: 3,
                                   ),
                                   Container(
-                                    margin: EdgeInsets.only(left: 5, right: 5),
-                                    child: Text(
-                                      'Score: 8.33',
-                                      style: GoogleFonts.montserrat(
-                                        color: Colors.white,
-                                        fontSize: 10,
-                                      ),
-                                    ),
-                                  ),
-                                  Text(
-                                    '#201',
-                                    style: GoogleFonts.montserrat(
-                                      color: Color(0xFF5AA1A6),
-                                      fontSize: 10,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: <Widget>[
+                                        Container(
+                                          child: SingleChildScrollView(
+                                            scrollDirection: Axis.horizontal,
+                                            child: Text(
+                                              index['title'],
+                                              style: GoogleFonts.montserrat(
+                                                color: Colors.white,
+                                                fontSize: 13,
+                                              ),
+                                              textAlign: TextAlign.left,
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 7,
+                                        ),
+                                        Container(
+                                          child: SingleChildScrollView(
+                                            scrollDirection: Axis.horizontal,
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: <Widget>[
+                                                Image.network(
+                                                  'https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png',
+                                                  height: 12,
+                                                  width: 12,
+                                                ),
+                                                Container(
+                                                  margin: EdgeInsets.only(
+                                                      left: 5, right: 5),
+                                                  child: Text(
+                                                    'Score: ' +
+                                                        index['score']
+                                                            .toString(),
+                                                    style:
+                                                        GoogleFonts.montserrat(
+                                                      color: Colors.white,
+                                                      fontSize: 10,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Text(
+                                                  '#' +
+                                                      index['rank'].toString(),
+                                                  style: GoogleFonts.montserrat(
+                                                    color: Color(0xFF5AA1A6),
+                                                    fontSize: 10,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ],
                               ),
-                            ],
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                        )
+                        .toList()
+                    : <Widget>[Container()],
               ),
             ),
           ],

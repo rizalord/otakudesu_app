@@ -1,6 +1,27 @@
 import 'package:flutter/material.dart';
 
-class SearchBar extends StatelessWidget {
+class SearchBar extends StatefulWidget {
+  final Function callBack;
+  final TextEditingController controller;
+  SearchBar({this.callBack , this.controller});
+  
+  @override
+  _SearchBarState createState() => _SearchBarState();
+}
+
+class _SearchBarState extends State<SearchBar> {
+  Function doSearch;
+  var textController = TextEditingController();
+
+  @override
+  void initState() {
+    doSearch = widget.callBack;
+    textController = widget.controller;
+    super.initState();
+  }
+
+  
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,6 +36,8 @@ class SearchBar extends StatelessWidget {
           children: <Widget>[
             Flexible(
               child: TextFormField(
+                onEditingComplete: widget.callBack,
+                controller: widget.controller,
                 decoration: InputDecoration(
                   hintText: 'Search...',
                   labelStyle: TextStyle(color: Colors.black),

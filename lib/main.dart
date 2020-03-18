@@ -28,8 +28,6 @@ class _MyAppState extends State<MyApp> {
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,
     ]);
-    
-
 
     super.initState();
   }
@@ -45,8 +43,6 @@ class _MyAppState extends State<MyApp> {
     super.dispose();
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -59,21 +55,24 @@ class _MyAppState extends State<MyApp> {
 }
 
 class GeneralApp extends StatefulWidget {
-
-
   @override
   _GeneralAppState createState() => _GeneralAppState();
 }
 
 class _GeneralAppState extends State<GeneralApp> {
-
   int selectedIndex = 0;
-  List<Widget> _widgetOptions = <Widget>[
-      MainHome(),
+  List<Widget> _widgetOptions = [];
+
+  @override
+  void initState() {
+    _widgetOptions = <Widget>[
+      MainHome(onTabBar: onTapBar),
       MainSearch(),
       MainFavorites(),
       MainProfile(),
     ];
+    super.initState();
+  }
 
   void onTapBar(int index) {
     setState(() {
@@ -90,7 +89,7 @@ class _GeneralAppState extends State<GeneralApp> {
 
       //   children: widget._widgetOptions,
       // ),
-      body : IndexedStack(
+      body: IndexedStack(
         index: selectedIndex,
         children: _widgetOptions,
       ),

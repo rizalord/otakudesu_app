@@ -3,11 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:touchable_opacity/touchable_opacity.dart';
 
+import '../watch_movie.dart';
+
 class DetailMovieHeader extends StatelessWidget {
   final String image, title;
   final int rank, season;
   final double score;
   final List<dynamic> genre;
+  final Function doBookmark;
+  final bool favorited;
+  final List<dynamic> episodes;
   String lastGenre;
 
   DetailMovieHeader(
@@ -16,7 +21,10 @@ class DetailMovieHeader extends StatelessWidget {
       this.rank,
       this.season,
       this.score,
-      this.genre}) {
+      this.genre,
+      this.doBookmark,
+      this.favorited,
+      this.episodes}) {
     lastGenre = this.genre.join(' / ');
   }
 
@@ -57,7 +65,7 @@ class DetailMovieHeader extends StatelessWidget {
             child: TouchableOpacity(
               activeOpacity: 0.3,
               onTap: () {
-                Navigator.of(context , rootNavigator: true).pop();
+                Navigator.of(context, rootNavigator: true).pop();
               },
               child: Icon(
                 Icons.chevron_left,
@@ -71,9 +79,9 @@ class DetailMovieHeader extends StatelessWidget {
           top: 15,
           right: 0,
           child: IconButton(
-            onPressed: () {},
+            onPressed: doBookmark,
             icon: Icon(
-              Icons.star,
+              favorited == true ? Icons.star : Icons.star_border,
               color: Color(0xFF87F5F5),
             ),
             iconSize: 35,
@@ -160,10 +168,22 @@ class DetailMovieHeader extends StatelessWidget {
                         color: Colors.white,
                         size: 30,
                       ),
-                      Text(
-                        'Watch',
-                        style: GoogleFonts.poppins(
-                            color: Colors.white, fontSize: 15),
+                      TouchableOpacity(
+                        activeOpacity: 0.8,
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  VideoPlayerScreen(url: episodes[0]['url']),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          'Watch',
+                          style: GoogleFonts.poppins(
+                              color: Colors.white, fontSize: 15),
+                        ),
                       ),
                     ],
                   ),

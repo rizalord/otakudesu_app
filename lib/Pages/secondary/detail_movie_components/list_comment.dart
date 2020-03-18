@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:time_formatter/time_formatter.dart';
+import 'package:touchable_opacity/touchable_opacity.dart';
 
 class ListComment extends StatefulWidget {
   final bool withInput;
@@ -24,6 +25,7 @@ class _ListCommentState extends State<ListComment> {
   bool withInput;
   Function commentMethod;
   List<dynamic> comments = [];
+  List<String> likedList = [];
 
   @override
   void initState() {
@@ -31,21 +33,30 @@ class _ListCommentState extends State<ListComment> {
     withInput = widget.withInput;
     commentMethod = widget.commentMethod;
     getComments(commentsId, withInput);
+    getLikedComments();
     super.initState();
+  }
+
+  getLikedComments() async {
+    SharedPreferences localDb = await SharedPreferences.getInstance();
+    likedList = localDb.getStringList('commentsId'); // get list of id
   }
 
   void renderComment(String text, String key) async {
     SharedPreferences localDb = await SharedPreferences.getInstance();
-
     setState(() {
-      comments.insert(0, {
-        'commentId': key,
-        'text': text,
-        'name': localDb.getString('name'),
-        'uid': localDb.getString('userId'),
-        'created_at': DateTime.now().millisecondsSinceEpoch,
-        'likes': 0,
-        'image': localDb.getString('photo')
+      comments = List.from(comments)
+        ..add({
+          'commentId': key,
+          'text': text,
+          'name': localDb.getString('name'),
+          'uid': localDb.getString('userId'),
+          'created_at': DateTime.now().millisecondsSinceEpoch,
+          'likes': 0,
+          'image': localDb.getString('photo')
+        });
+      comments.forEach((element) {
+        print(element);
       });
     });
   }
@@ -87,8 +98,45 @@ class _ListCommentState extends State<ListComment> {
           comments = list != null ? list : [];
         });
       });
-
     }
+  }
+
+  void doLike(String comId) async {
+    SharedPreferences localDb = await SharedPreferences.getInstance();
+    List<String> list_id =
+        localDb.getStringList('commentsId'); // get list of id
+    FirebaseDatabase.instance
+        .reference()
+        .child('videos')
+        .child(commentsId.toString())
+        .child('comments')
+        .child(comId)
+        .child('likes')
+        .once()
+        .then((DataSnapshot snapshot) {
+      int like = snapshot.value;
+      if (list_id.indexOf(comId) < 0) {
+        // there is no data
+        list_id.insert(0, comId);
+        like++;
+      } else {
+        // found data
+        list_id.remove(comId);
+        like--;
+      }
+      localDb.setStringList('commentsId', list_id);
+      FirebaseDatabase.instance
+          .reference()
+          .child('videos')
+          .child(commentsId.toString())
+          .child('comments')
+          .child(comId)
+          .child('likes')
+          .set(like)
+          .whenComplete(() {
+        this.getComments(commentsId, withInput);
+      });
+    });
   }
 
   @override
@@ -181,13 +229,26 @@ class _ListCommentState extends State<ListComment> {
                     padding: EdgeInsets.only(top: 0),
                     physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (context, index) {
-                      return CommentCard(
-                          image: comments[index]['image'],
-                          name: comments[index]['name'],
-                          time: comments[index]['created_at'],
-                          text: comments[index]['text'],
-                          like: comments[index]['likes'],
-                          withInput: widget.withInput);
+                      return TouchableOpacity(
+                        activeOpacity: 0.8,
+                        onTap: () {
+                          withInput
+                              ? doLike(comments[index]['commentId'])
+                              : null;
+                        },
+                        child: CommentCard(
+                            image: comments[index]['image'],
+                            name: comments[index]['name'],
+                            time: comments[index]['created_at'],
+                            text: comments[index]['text'],
+                            like: comments[index]['likes'],
+                            liked: likedList
+                                        .indexOf(comments[index]['commentId']) <
+                                    0
+                                ? false
+                                : true,
+                            withInput: widget.withInput),
+                      );
                     },
                   ),
                 )
@@ -201,8 +262,15 @@ class CommentCard extends StatelessWidget {
   final String image, name, text;
   final int time, like;
   final bool withInput;
+  final bool liked;
   CommentCard(
-      {this.image, this.name, this.text, this.time, this.like, this.withInput});
+      {this.image,
+      this.name,
+      this.text,
+      this.time,
+      this.like,
+      this.withInput,
+      this.liked = false});
 
   @override
   Widget build(BuildContext context) {
@@ -299,7 +367,9 @@ class CommentCard extends StatelessWidget {
                               Container(
                                 margin: EdgeInsets.only(right: 5),
                                 child: Icon(
-                                  Icons.favorite_border,
+                                  liked == true
+                                      ? Icons.favorite
+                                      : Icons.favorite_border,
                                   color: Colors.white,
                                   size: 15,
                                 ),

@@ -2,6 +2,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class HomeHeader extends StatefulWidget {
+  final Function onTabBar;
+  HomeHeader({this.onTabBar});
+
   @override
   State<StatefulWidget> createState() {
     return _HomeHeaderState();
@@ -29,7 +32,9 @@ class _HomeHeaderState extends State<HomeHeader> {
             child: IconButton(
               icon: Icon(Icons.search),
               color: Colors.white,
-              onPressed: () {},
+              onPressed: () {
+                widget.onTabBar(1);
+              },
             ),
           ),
         ],

@@ -21,6 +21,7 @@ class _DetailMovieState extends State<DetailMovie> {
   int initIndex = 0;
   int id;
   DatabaseReference _db = FirebaseDatabase.instance.reference();
+  bool favorited;
 
   @override
   void initState() {
@@ -31,13 +32,17 @@ class _DetailMovieState extends State<DetailMovie> {
     ]);
     //
     id = widget.data;
-
-    getInfoMovie(id);
     super.initState();
   }
 
-  Future getInfoMovie(int id) =>
-      _db.child('videos').orderByChild('id').equalTo(id).once();
+  Future getInfoMovie(int id) async {
+    SharedPreferences localDb = await SharedPreferences.getInstance();
+    List<String> data = localDb.getStringList('favoritesId');
+    setState(() {
+      favorited = data.indexOf(id.toString()) < 0 ? false : true;
+    });
+    return _db.child('videos').orderByChild('id').equalTo(id).once();
+  }
 
   @override
   void dispose() {
@@ -74,7 +79,12 @@ class _DetailMovieState extends State<DetailMovie> {
       'image': localDb.getString('photo')
     });
 
-    await _db.child('users').child(localDb.getString('userId')).child('comments').push().set({
+    await _db
+        .child('users')
+        .child(localDb.getString('userId'))
+        .child('comments')
+        .push()
+        .set({
       'commentId': newKey,
       'text': text,
       'name': localDb.getString('name'),
@@ -82,10 +92,23 @@ class _DetailMovieState extends State<DetailMovie> {
       'created_at': DateTime.now().millisecondsSinceEpoch,
       'likes': 0,
       'image': localDb.getString('photo'),
-      'videoId' : id
+      'videoId': id
     });
-    
+
     return newKey;
+  }
+
+  void doBookmark() async {
+    SharedPreferences localDb = await SharedPreferences.getInstance();
+    List<String> data = localDb.getStringList('favoritesId');
+    if (data.indexOf(id.toString()) < 0) {
+      // jika tidak ada
+      data.insert(0, id.toString());
+    } else {
+      // jika ada
+      data.removeAt(data.indexOf(id.toString()));
+    }
+    localDb.setStringList('favoritesId', data);
   }
 
   @override
@@ -94,13 +117,6 @@ class _DetailMovieState extends State<DetailMovie> {
         theme: ThemeData(
             scaffoldBackgroundColor: Color(0xFF0A0A19),
             backgroundColor: Color(0xFF0A0A19)),
-        // home: id != null
-        //     ? Container()
-        //     : DetailMovieApp(
-        //         initIndex: initIndex,
-        //         changeTab: this.changeTab,
-        //         data: this.id,
-        //         commentMethod: this.sendComment),
         home: FutureBuilder(
           future: getInfoMovie(id),
           builder: (context, snapshot) {
@@ -110,7 +126,10 @@ class _DetailMovieState extends State<DetailMovie> {
                     changeTab: this.changeTab,
                     data:
                         snapshot.data.value.where((e) => e != null).toList()[0],
-                    commentMethod: this.sendComment)
+                    commentMethod: this.sendComment,
+                    doBookmark: this.doBookmark,
+                    favorited : favorited
+                    )
                 : Center(
                     child: Container(
                       width: 40,
@@ -131,13 +150,19 @@ class DetailMovieApp extends StatelessWidget {
       @required this.initIndex,
       @required this.changeTab,
       @required this.data,
-      @required this.commentMethod}) {
+      @required this.commentMethod,
+      this.doBookmark,
+      this.favorited
+      }) {
     tabPages = [
-      ListEpisode(episodes: this.data['episodes']),
+      ListEpisode(
+        episodes: this.data['episodes'],
+        idMovie: this.data['id'],
+      ),
       ListComment(
           withInput: true,
           commentsId: this.data['id'],
-          commentMethod: this.commentMethod),
+          commentMethod: this.commentMethod)
     ];
   }
 
@@ -145,6 +170,8 @@ class DetailMovieApp extends StatelessWidget {
   final int initIndex;
   final Function changeTab;
   final Function commentMethod;
+  final Function doBookmark;
+  final bool favorited;
   List<Widget> tabPages;
 
   @override
@@ -164,7 +191,11 @@ class DetailMovieApp extends StatelessWidget {
                   rank: data['rank'],
                   season: data['season'],
                   title: data['title'],
-                  genre: data['genres']),
+                  genre: data['genres'],
+                  episodes : data['episodes'],
+                  doBookmark: doBookmark,
+                  favorited : favorited
+                  ),
               DetailMovieSinopsis(sinopsis: data['sinopsis']),
               DefaultTabController(
                 initialIndex: initIndex,

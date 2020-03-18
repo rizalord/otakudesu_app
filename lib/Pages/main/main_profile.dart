@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:otakudesu_app/Pages/auth/SplashScreenWithAuth.dart';
 import 'package:otakudesu_app/Pages/secondary/detail_movie_components/list_comment.dart';
 import 'package:otakudesu_app/Pages/secondary/detail_movie_components/list_episode.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:touchable_opacity/touchable_opacity.dart';
 
 class MainProfile extends StatefulWidget {
   @override
@@ -16,22 +18,24 @@ class MainProfile extends StatefulWidget {
 
 class _MainProfileState extends State<MainProfile> {
   void doLogout() async {
+    print('logout');
     await FirebaseAuth.instance.signOut();
     await GoogleSignIn().signOut();
     SharedPreferences sp = await SharedPreferences.getInstance();
     sp.clear();
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => SplashScreen()));
+
+    
   }
 
   @override
   void initState() {
-    // doLogout();
     super.initState();
   }
 
   final List<Widget> listTab = [
-    ListEpisode(onProfile : true),
+    ListEpisode(onProfile: true),
     ListComment(withInput: false),
   ];
   var activeIndex = 0;
@@ -120,6 +124,24 @@ class _MainProfileState extends State<MainProfile> {
                     ),
                   ),
                 ),
+                Positioned(
+                  top: 20,
+                  right: 0,
+                  child: Container(
+                    width: 60,
+                    height: 60,
+                    child: TouchableOpacity(
+                      onTap: doLogout,
+                      child: Center(
+                        child: IconButton(
+                          icon: Icon(MdiIcons.exitToApp),
+                          iconSize: 30,
+                          onPressed: doLogout,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
             Container(
