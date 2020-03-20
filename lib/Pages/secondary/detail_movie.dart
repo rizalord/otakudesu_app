@@ -121,15 +121,28 @@ class _DetailMovieState extends State<DetailMovie> {
           future: getInfoMovie(id),
           builder: (context, snapshot) {
             return snapshot.hasData
-                ? DetailMovieApp(
-                    initIndex: initIndex,
-                    changeTab: this.changeTab,
-                    data:
-                        snapshot.data.value.where((e) => e != null).toList()[0],
-                    commentMethod: this.sendComment,
-                    doBookmark: this.doBookmark,
-                    favorited : favorited
-                    )
+                ? snapshot.data.value != null
+                    ? DetailMovieApp(
+                        initIndex: initIndex,
+                        changeTab: this.changeTab,
+                        data: snapshot.data.value is List
+                            ? snapshot.data.value
+                                .where((e) => e != null)
+                                .toList()[0]
+                            : snapshot.data.value[id.toString()],
+                        commentMethod: this.sendComment,
+                        doBookmark: this.doBookmark,
+                        favorited: favorited)
+                    : Center(
+                        child: Container(
+                          width: 40,
+                          height: 40,
+                          child: CircularProgressIndicator(
+                            valueColor:
+                                AlwaysStoppedAnimation<Color>(Colors.white),
+                          ),
+                        ),
+                      )
                 : Center(
                     child: Container(
                       width: 40,
@@ -152,8 +165,7 @@ class DetailMovieApp extends StatelessWidget {
       @required this.data,
       @required this.commentMethod,
       this.doBookmark,
-      this.favorited
-      }) {
+      this.favorited}) {
     tabPages = [
       ListEpisode(
         episodes: this.data['episodes'],
@@ -192,10 +204,9 @@ class DetailMovieApp extends StatelessWidget {
                   season: data['season'],
                   title: data['title'],
                   genre: data['genres'],
-                  episodes : data['episodes'],
+                  episodes: data['episodes'],
                   doBookmark: doBookmark,
-                  favorited : favorited
-                  ),
+                  favorited: favorited),
               DetailMovieSinopsis(sinopsis: data['sinopsis']),
               DefaultTabController(
                 initialIndex: initIndex,

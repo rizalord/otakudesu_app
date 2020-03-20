@@ -3,15 +3,440 @@
     "id" : 1,
     "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/hoshiumi.png?alt=media&token=83758e28-189f-4003-a825-a44f5f3ae9bb"
   },
+  "users" : {
+    "Um5FxBwW39Qv20s9sK9C2IyzAn42" : {
+      "comments" : {
+        "-M2WspREz5jajs3Wg5IB" : {
+          "commentId" : "-M2Wsp6R4D48FHjYns38",
+          "created_at" : 1584337737488,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : " a",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2WsroBi4KARKl3-Jxi" : {
+          "commentId" : "-M2WsrhChWdcdmniLzpa",
+          "created_at" : 1584337747212,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "b",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2Wst0hX5tO1Dz9Gh6K" : {
+          "commentId" : "-M2Wsstcs7tU3qw6vM0w",
+          "created_at" : 1584337752173,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "c",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g6C0BUjzrY74FIYUa" : {
+          "commentId" : "-M2g6BvfUhYLLCDtOQbN",
+          "created_at" : 1584509276236,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "nice",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 0
+        },
+        "-M2g6Edaqb9S_OqhymAL" : {
+          "commentId" : "-M2g6EZd3JusEt5JaMHc",
+          "created_at" : 1584509287015,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "nice",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 0
+        },
+        "-M2g6Hk6HY4SD_gpj_g0" : {
+          "commentId" : "-M2g6HeR08SOEKF5SxAM",
+          "created_at" : 1584509299719,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "mantap",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 0
+        },
+        "-M2g6itHller_tB_lQp7" : {
+          "commentId" : "-M2g6ioYU_I_nNdOqdNC",
+          "created_at" : 1584509414994,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "tes",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g6kqKrCSVSV-eivE0" : {
+          "commentId" : "-M2g6kkm3G5VBewx5e-b",
+          "created_at" : 1584509422997,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "yeah",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g6yRoErByzO_TAAcH" : {
+          "commentId" : "-M2g6yLNBXVFI7Y3ApNh",
+          "created_at" : 1584509478708,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "aaaaa",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g6zYdZeI5NQaUc2b1" : {
+          "commentId" : "-M2g6zTxwg55ETxkY7tt",
+          "created_at" : 1584509483241,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "manrap",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g7M6ZyZ2DKhGd0Pql" : {
+          "commentId" : "-M2g7M13dlUoqM-yr9vE",
+          "created_at" : 1584509579748,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "haya",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g7cKzzkuAfgmNPFKF" : {
+          "commentId" : "-M2g7cGHu19nX6vh3mGR",
+          "created_at" : 1584509650304,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "tes1",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g7piNiiOAZnN5NwP_" : {
+          "commentId" : "-M2g7pd0rMl517jStvn7",
+          "created_at" : 1584509705113,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "2",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g81y4iXRfYNQT_0As" : {
+          "commentId" : "-M2g81tB35VcGVIQh5py",
+          "created_at" : 1584509759366,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "tes",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2g88JnZ0TDK7kityth" : {
+          "commentId" : "-M2g88EOm5TQvnA5yHJt",
+          "created_at" : 1584509785395,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "shit",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gCUIql_0JyYB8r4-W" : {
+          "commentId" : "-M2gCUE2DbMNxG3xBBpe",
+          "created_at" : 1584510924023,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "a",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gEu7nXi7mjb1Zhuv5" : {
+          "commentId" : "-M2gEu1rGOqhkO3XRJiV",
+          "created_at" : 1584511558195,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "tes",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 0
+        },
+        "-M2gEzUotWgORqPe5Ayu" : {
+          "commentId" : "-M2gEzP2vp2AQTDQNnZ6",
+          "created_at" : 1584511580148,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "kkk",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gGAsLxaKrFfO4F90h" : {
+          "commentId" : "-M2gGAmeV-QCkcKRmnDI",
+          "created_at" : 1584511893014,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "nakal",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gGODk4G2LOKcnqjDW" : {
+          "commentId" : "-M2gGO8kaLumwvXAY_ms",
+          "created_at" : 1584511947697,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "nakalan",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gGPn5t_B8hIeGW1-8" : {
+          "commentId" : "-M2gGPhDVpN32wjOhINj",
+          "created_at" : 1584511954118,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "yoi",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gGXdHG5cNA9bxuQ-v" : {
+          "commentId" : "-M2gGXVS8GdLMmMi38wD",
+          "created_at" : 1584511986259,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "mantap",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gIK-zQuFDIsaxo5tV" : {
+          "commentId" : "-M2gIJuGiDm7o3qy4ISH",
+          "created_at" : 1584512454719,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "ker",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gIsaTHnsbSB8mQwok" : {
+          "commentId" : "-M2gIsVJLiIEZZoP4rdt",
+          "created_at" : 1584512600479,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "test",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gIuQ4skKbUy_gsVkR" : {
+          "commentId" : "-M2gIuJkg-RXkIf8Kc47",
+          "created_at" : 1584512607942,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "lagi",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gKr4uDxRZO9A6JM2A" : {
+          "commentId" : "-M2gKr06PxWBYXc_alMX",
+          "created_at" : 1584513118586,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "a",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gKuN6Mw0PU-RBeRyG" : {
+          "commentId" : "-M2gKuHRf9A4nmVrKZxq",
+          "created_at" : 1584513132039,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "b",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gL0oerIJPhGLSg-Nu" : {
+          "commentId" : "-M2gL0ihJ4oKZHeClWXL",
+          "created_at" : 1584513162538,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "c",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        },
+        "-M2gONOo5omObeTuwzTr" : {
+          "commentId" : "-M2gONI6t_-pFVxj8xe-",
+          "created_at" : 1584514041461,
+          "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+          "likes" : 0,
+          "name" : "Ahmad Rizal",
+          "text" : "a",
+          "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42",
+          "videoId" : 1
+        }
+      },
+      "episodes" : {
+        "-M2XSMmfsSbast8hi-8h" : {
+          "episode" : 1,
+          "taked_at" : 1584347315336,
+          "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+          "time_duration" : "23m",
+          "title" : "Awal Perjalanan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2XffjB28V5ZAXlWCIn" : {
+          "episode" : 1,
+          "taked_at" : 1584351067075,
+          "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+          "time_duration" : "23m",
+          "title" : "Awal Perjalanan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2XfkkffjJQUDivVldu" : {
+          "episode" : 2,
+          "taked_at" : 1584351087653,
+          "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
+          "time_duration" : "23m",
+          "title" : "Absolute Demonic Front Babylonia",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2auYxWSX_JsPiKB91O" : {
+          "episode" : 1,
+          "taked_at" : 1584422076240,
+          "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+          "time_duration" : "23m",
+          "title" : "Awal Perjalanan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2auhiqlt6TibQgYpql" : {
+          "episode" : 1,
+          "taked_at" : 1584422116270,
+          "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+          "time_duration" : "23m",
+          "title" : "Awal Perjalanan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2aurzlDiDv8eEO2dSv" : {
+          "episode" : 1,
+          "taked_at" : 1584422158313,
+          "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+          "time_duration" : "23m",
+          "title" : "Awal Perjalanan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2avQ9wxcKmjflAFdnR" : {
+          "episode" : 1,
+          "taked_at" : 1584422302388,
+          "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+          "time_duration" : "23m",
+          "title" : "Awal Perjalanan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2avSPO-ZzFKtrF1Yyz" : {
+          "episode" : 1,
+          "taked_at" : 1584422311572,
+          "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
+          "time_duration" : "23m",
+          "title" : "Awal Perjalanan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        },
+        "-M2bd4OeNaBJjHyQyVLI" : {
+          "episode" : 2,
+          "taked_at" : 1584434271830,
+          "thumbnail" : "https://deku.zonawibu.cc/wp-content/uploads/2020/01/00000250.jpg",
+          "time_duration" : "23m",
+          "title" : "Kehilangan",
+          "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
+        }
+      },
+      "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+    },
+    "aCYnOus3DrOsYaGtp7G0a30utB42" : {
+      "comments" : {
+        "-M2g0JmIngtCcFQ3s_3K" : {
+          "commentId" : "-M2g0Jh954AsmIQ3SLRj",
+          "created_at" : 1584507735187,
+          "image" : "https://lh6.googleusercontent.com/-dde_LgEwmjA/AAAAAAAAAAI/AAAAAAAAAAA/AKF05nDUz8eJ4AL11aFhtz32sBP-mhDtvg/s96-c/photo.jpg",
+          "likes" : 0,
+          "name" : "ahmad khamdani",
+          "text" : "keren",
+          "uid" : "aCYnOus3DrOsYaGtp7G0a30utB42",
+          "videoId" : 0
+        }
+      },
+      "uid" : "aCYnOus3DrOsYaGtp7G0a30utB42"
+    }
+  },
   "videos" : [ {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
+    "comments" : {
+      "-M2g0Jh954AsmIQ3SLRj" : {
+        "commentId" : "-M2g0Jh954AsmIQ3SLRj",
+        "created_at" : 1584507734860,
+        "image" : "https://lh6.googleusercontent.com/-dde_LgEwmjA/AAAAAAAAAAI/AAAAAAAAAAA/AKF05nDUz8eJ4AL11aFhtz32sBP-mhDtvg/s96-c/photo.jpg",
+        "likes" : 0,
+        "name" : "ahmad khamdani",
+        "text" : "keren",
+        "uid" : "aCYnOus3DrOsYaGtp7G0a30utB42"
+      },
+      "-M2g6BvfUhYLLCDtOQbN" : {
+        "commentId" : "-M2g6BvfUhYLLCDtOQbN",
+        "created_at" : 1584509275884,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 0,
+        "name" : "Ahmad Rizal",
+        "text" : "nice",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      },
+      "-M2g6EZd3JusEt5JaMHc" : {
+        "commentId" : "-M2g6EZd3JusEt5JaMHc",
+        "created_at" : 1584509286698,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 0,
+        "name" : "Ahmad Rizal",
+        "text" : "nice",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      },
+      "-M2g6HeR08SOEKF5SxAM" : {
+        "commentId" : "-M2g6HeR08SOEKF5SxAM",
+        "created_at" : 1584509299357,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 0,
+        "name" : "Ahmad Rizal",
+        "text" : "mantap",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      },
+      "-M2gEu1rGOqhkO3XRJiV" : {
+        "commentId" : "-M2gEu1rGOqhkO3XRJiV",
+        "created_at" : 1584511557817,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 0,
+        "name" : "Ahmad Rizal",
+        "text" : "tes",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      }
+    },
     "created_at" : 1584086912,
     "episodes" : [ {
       "episode" : 1,
@@ -27,24 +452,55 @@
       "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
     } ],
     "genres" : [ "Sport", "Comedy" ],
+    "id" : 0,
     "image" : "https://cdn.myanimelist.net/images/anime/1813/105367l.jpg",
     "rank" : 38,
     "score" : 8.72,
     "season" : 4,
     "sinopsis" : "Setelah menjuarai Kualifikasi Turnamen Musim Semi Nasional Voli Prefektur Miyagi, perjalanan Hinata Shoyo dengan Tim Karasuno akan terus berlanjut di kancah Nasional Turnamen Voli Musim Semi. Haikyuu season 4 dimulai dengan Kageyama Tobio mendapatkan sebuah undangan untuk mengikuti kamp pelatihan Calon Atlet Nasional Muda Jepang.",
-    "title" : "Haikyu: To The Top",
-    "updated_at" : 1584086912,
-    "views" : 200
+    "title" : "Haikyuu!!: To The Top",
+    "updated_at" : 1584171599644,
+    "views" : 201
   }, {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
+    "comments" : {
+      "-M2gKr06PxWBYXc_alMX" : {
+        "commentId" : "-M2gKr06PxWBYXc_alMX",
+        "created_at" : 1584513118280,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 0,
+        "name" : "Ahmad Rizal",
+        "text" : "a",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      },
+      "-M2gKuHRf9A4nmVrKZxq" : {
+        "commentId" : "-M2gKuHRf9A4nmVrKZxq",
+        "created_at" : 1584513131677,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 1,
+        "name" : "Ahmad Rizal",
+        "text" : "b",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      },
+      "-M2gL0ihJ4oKZHeClWXL" : {
+        "commentId" : "-M2gL0ihJ4oKZHeClWXL",
+        "created_at" : 1584513162161,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 0,
+        "name" : "Ahmad Rizal",
+        "text" : "c",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      },
+      "-M2gONI6t_-pFVxj8xe-" : {
+        "commentId" : "-M2gONI6t_-pFVxj8xe-",
+        "created_at" : 1584514041032,
+        "image" : "https://lh3.googleusercontent.com/a-/AOh14GgN913O6SCHOGXCao7yVxq10NtIrz2DQ6qIuq_JgA=s96-c",
+        "likes" : 1,
+        "name" : "Ahmad Rizal",
+        "text" : "a",
+        "uid" : "Um5FxBwW39Qv20s9sK9C2IyzAn42"
+      }
+    },
+    "created_at" : 1584171493644,
     "episodes" : [ {
       "episode" : 1,
       "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
@@ -59,278 +515,40 @@
       "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
     } ],
     "genres" : [ "Sport", "Comedy" ],
+    "id" : 1,
     "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
     "rank" : 689,
     "score" : 8.33,
     "season" : 3,
     "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
     "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
+    "updated_at" : 1584171599645,
+    "views" : 402
+  },{
+    "created_at" : 1584086912,
+    "genres" : [ "Psychological", "Drama", "Thriller", "Fantasy" ],
+    "id" : 2,
+    "image" : "https://cdn.myanimelist.net/images/anime/1010/100084l.jpg",
+    "rank" : 642,
+    "score" : 8.52,
+    "season" : 2,
+    "sinopsis" : "Season kedua dari Re:Zero kara Hajimeru Isekai Seikatsu.",
+    "title" : "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "updated_at" : 1584171599644,
+    "views" : 201
   },
   {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
     "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
-  },
-  {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
-  },
-  {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
-  },
-  {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
-  },
-  {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
-  },
-  {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
-  },
-  {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
-  },
-  {
-    "comments" : [ {
-      "created_at" : 7286472482,
-      "image" : "https://pokokeimage",
-      "likes" : 1,
-      "name" : "Ahmad Khamdani",
-      "text" : "Mantap Gayn",
-      "uid" : "42342jfes72"
-    } ],
-    "created_at" : 1584086912,
-    "episodes" : [ {
-      "episode" : 1,
-      "thumbnail" : "https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwEfVnEqlRP9ChWQER4k5v40",
-      "time_duration" : "23m",
-      "title" : "Awal Perjalanan",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    }, {
-      "episode" : 2,
-      "thumbnail" : "https://jouganime.com/images/fategrand-order-zettai-majuu-sensen-babylonia-episode-2-subtitle-indonesia.jpg",
-      "time_duration" : "23m",
-      "title" : "Absolute Demonic Front Babylonia",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/otakudesu-4500b.appspot.com/o/%5BANITOKI.COM%5D_GB_01_480p_x265_WWW.EMPERORNIME.GA.mkv?alt=media&token=2f04410d-55ae-4408-9860-af0fd174678e"
-    } ],
-    "genres" : [ "Sport", "Comedy" ],
-    "image" : "https://cdn.myanimelist.net/images/anime/1194/103420l.jpg",
-    "rank" : 689,
-    "score" : 8.33,
-    "season" : 3,
-    "sinopsis" : "Setelah berhasil menaklukan enam singularity dengan penuh perjuangan. Kini Ritsuka Fujimaru dan Mash Kyrielight yang bernaung dibawah organisasi bernama Chaldea mengemban tugas terakhir mereka untuk mendapatkan Holy Grail pada peradaban kuno Babylonia ditahun 2655 BC.",
-    "title" : "FGO: Babylonia",
-    "updated_at" : 1584086912,
-    "views" : 400
+    "genres" : [ "Comedy", "Romance", "School" ],
+    "id" : 3,
+    "image" : "https://cdn.myanimelist.net/images/anime/1676/103600.jpg",
+    "rank" : 1175,
+    "score" : 8.32,
+    "season" : 2,
+    "sinopsis" : "Season kedua dari Kaguya-sama wa Kokurasetai.",
+    "title" : "Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen",
+    "updated_at" : 1584171599644,
+    "views" : 1201
   }
  ]
 }
